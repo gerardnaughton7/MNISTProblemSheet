@@ -3,8 +3,9 @@
 
 # Part 1 : Download the image and label files, have Python decompress them and read them byte by byte into appropriate data structures in memory.
 
-# Adapted code discovered on this link
+# Adapted code discovered on these links
 # https://stackoverflow.com/questions/12902540/read-from-a-gzip-file-in-python
+# https://stackoverflow.com/questions/2872381/how-to-read-a-file-byte-by-byte-in-python-and-how-to-print-a-bytelist-as-a-binar
 
 # import gzip
 import gzip
@@ -18,8 +19,9 @@ magic = f.read(4)
 # Print magic
 print(magic)
 
-#Converting binary to decimal
+# Converting binary to decimal
 print(int.from_bytes(magic, byteorder='big')) #convert bytes to int and it is read in the big order
 
+# Close file
 f.close()
 
