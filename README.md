@@ -26,7 +26,7 @@ Here is a link to download Visual Studio Code: https://code.visualstudio.com/dow
 With anaconda you recieve a terminal called anaconda prompt through this you will be able to run your python code by simply using the command "python" followed by your file name.py.
 
 You will also have to download the images for this program. 
-Here is the link to the images: http://yann.lecun.com/exdb/mnist/
+Here is the link to the images and labels: http://yann.lecun.com/exdb/mnist/
 After you have downloaded the zipped images place them into a folder called data within your repository.
 
 You should now be able to run this code.
