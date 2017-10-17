@@ -9,9 +9,6 @@ __pycache__/
 # data file containing images
 \data
 
-# pngImages file containing png images
-\pngImages
-
 # Distribution / packaging
 .Python
 build/

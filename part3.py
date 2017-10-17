@@ -51,13 +51,11 @@ def read_labels_from_file(filename):
         # Gets us our magic number in the first 4 bytes
         magic = f.read(4)
         magic = int.from_bytes(magic, 'big')#convert bytes to int and it is read in the big order
-        print("Magic is: ", magic)# Prints to console
-
+        
         # Reads the next 4 byts to get the number of labels
         nolab = f.read(4)
         nolab = int.from_bytes(nolab, 'big')
-        print("Number of labels: ", nolab)# Prints to console
-
+        
         labelno = []
         # Loop through all the images/row/col to get each pixel and its position
         for i in range(nolab):
@@ -75,6 +73,7 @@ def save_images_as_pngs(images, labels):
         pngImg = pngImg.convert('RGB')# convert to RGB
         pngImg.save("pngImages/train-"+str(i)+"-"+str(labels[i])+".png")# Save png image in folder pngImages and with id train-number in list-number in picture
         i = i + 1# Increment the counter
+    print("Images have been saved to folder pngImages as png files.")
 
 
 # Get all the images and labels
@@ -83,5 +82,7 @@ train_labels = read_labels_from_file("data/train-labels-idx1-ubyte.gz")
 
 # save images and labels as png
 save_images_as_pngs(train_images, train_labels)
+
+
 
 
