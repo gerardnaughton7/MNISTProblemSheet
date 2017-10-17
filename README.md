@@ -34,4 +34,7 @@ Finally you will have to create a folder called pngImages in your repository. Th
 You should now be able to run this code.
 
 
+ps. in the pngImages folder it only shows a thousand images and not the 60000 the program produces. it had to truncate and omit 59000 images when i did my git push to this repository.
+
+
 
